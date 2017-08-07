@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/science_right_img"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            fresco:roundedCornerRadius="4dp"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            fresco:placeholderImage="@drawable/test"
+            fresco:placeholderImageScaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/science_right_img"
+            android:layout_marginRight="@dimen/sp_12"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/sience_header"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:failureImage="@drawable/load_fail"
+                    fresco:failureImageScaleType="centerCrop"
+                    fresco:placeholderImage="@drawable/load_fail"
+                    fresco:placeholderImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true"
+                    android:layout_centerVertical="true">
+                </com.facebook.drawee.view.SimpleDraweeView>
+
+                <TextView
+                    android:id="@+id/sience_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="哒哒哒"
+                    android:textSize="10sp"
+                    android:textColor="@color/font_gray"
+                    android:layout_toRightOf="@+id/sience_header"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这是标题这是标题这是标题这是标题这是标题这是标题"
+                android:textSize="15sp"
+                android:textColor="@color/font_gray"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阅读1240 · "
+                    android:textSize="10sp"
+                    android:textColor="@color/font_gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间2017-03-03"
+                    android:textSize="10sp"
+                    android:textColor="@color/font_gray"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
