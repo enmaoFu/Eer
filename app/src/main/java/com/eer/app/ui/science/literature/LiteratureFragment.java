@@ -1,15 +1,19 @@
 package com.eer.app.ui.science.literature;
 
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.eer.app.R;
 import com.eer.app.adapter.SciencePublicAdapter;
 import com.eer.app.base.BaseFgt;
 import com.eer.app.entity.SciencePublicEntity;
+import com.eer.app.ui.science.PopularizationDetailsActivity;
 import com.em.baseframe.adapter.recyclerview.BaseQuickAdapter;
+import com.em.baseframe.adapter.recyclerview.listener.OnItemClickListener;
 import com.em.baseframe.view.refresh.PtrInitHelper;
 import com.em.refresh.PtrDefaultHandler;
 import com.em.refresh.PtrFrameLayout;
@@ -80,6 +84,15 @@ public class LiteratureFragment extends BaseFgt{
         mSciencePublicAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
         //设置删除动画类型
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        //设置监听
+        mRecyclerView.addOnItemTouchListener(new OnItemClickListener() {
+            @Override
+            public void onSimpleItemClick(BaseQuickAdapter adapter, View view, int position) {
+                Bundle bundle = new Bundle();
+                bundle.putString("title","文献详情");
+                startActivity(PopularizationDetailsActivity.class,bundle);
+            }
+        });
         //设置adapter
         mRecyclerView.setAdapter(mSciencePublicAdapter);
     }
