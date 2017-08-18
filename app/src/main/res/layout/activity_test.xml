@@ -11,4 +11,64 @@
         android:layout_height="wrap_content"
         android:text="撒打算"/>
 
+    <Button
+        android:id="@+id/pop_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框1"/>
+
+    <Button
+        android:id="@+id/pop_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框2"/>
+
+    <Button
+        android:id="@+id/pop_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框3"/>
+
+    <Button
+        android:id="@+id/pop_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框4"/>
+
+    <Button
+        android:id="@+id/pop_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框5"/>
+
+    <Button
+        android:id="@+id/pop_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框6"/>
+
+    <Button
+        android:id="@+id/pop_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框7"/>
+
+    <Button
+        android:id="@+id/pop_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框8"/>
+
+    <Button
+        android:id="@+id/pop_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框9"/>
+
+    <Button
+        android:id="@+id/pop_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框10"/>
+
 </LinearLayout>

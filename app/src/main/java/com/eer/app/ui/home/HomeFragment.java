@@ -36,7 +36,7 @@ public class HomeFragment extends BaseFgt {
         //设置图片加载集合
         List<String> imageArray = new ArrayList<>();
         imageArray.add("http://img5q.duitang.com/uploads/item/201504/29/20150429185037_BwuRP.jpeg");
-        imageArray.add("http://i0.hdslb.com/group1/M00/93/82/oYYBAFbfnJKAYF02AACobXvB2EA676.jpg");
+        imageArray.add("http://i1.hdslb.com/video/98/9808be3eb2f11c4a7aed287a5aab1b3a.jpg");
         imageArray.add("http://i1.hdslb.com/video/98/9808be3eb2f11c4a7aed287a5aab1b3a.jpg");
 
         //设置banner样式
